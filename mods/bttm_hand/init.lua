@@ -20,8 +20,15 @@ minetest.register_item(":", {
                 maxlevel = 1,
             },
             oddly_breakable_by_hand = {
-                times = {[1] = 3.50, [2] = 2.00, [3] = 0.70},
-                uses = 0,
+                times = {
+                    [1] = 0.1,
+                    [2] = 2.5,
+                    [3] = 5,
+                    [4] = 10,
+                    [5] = 15,
+                    [6] = 25
+                },
+                uses = 25,
             },
         },
         damage_groups = {fleshy = 1},
